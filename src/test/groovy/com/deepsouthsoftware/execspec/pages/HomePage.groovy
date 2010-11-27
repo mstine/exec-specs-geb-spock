@@ -9,5 +9,6 @@ class HomePage extends Page {
 	
 	static content = {
 		findASpeaker { $("div.headerBox > a.headerLink").getAt(0) }
+		findAFluffbox { $("div.headerBox > a.headerLink").getAt(1) }
 	}
 }

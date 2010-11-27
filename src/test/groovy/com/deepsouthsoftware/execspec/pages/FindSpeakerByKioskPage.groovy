@@ -3,10 +3,12 @@ package com.deepsouthsoftware.execspec.pages
 import geb.Page
 import com.deepsouthsoftware.execspec.modules.AlexMillerModule
 
-class FindASpeakerPage extends Page {
-	static url = "speaker/find"
+class FindSpeakerByKioskPage extends Page {
+	static url = "speakerClone/findByKiosk/1"
 	
-	static at = { title == "Find a Speaker" }
+	static at = { 
+		$("h1").text() == "All Speakers" && $("h2").text() == "Selected Fluffbox:"
+	}
 	
 	static content = {
 		alexMiller { module AlexMillerModule }
