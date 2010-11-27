@@ -1,6 +1,7 @@
 package com.deepsouthsoftware.execspec.pages
 
 import geb.Page
+import com.deepsouthsoftware.execspec.modules.FirstKioskModule
 
 class FindKioskBySpeakerPage extends Page {
 	static url = "speakerClone/findBySpeaker/3"
@@ -10,6 +11,6 @@ class FindKioskBySpeakerPage extends Page {
 	}
 	
 	static content = {
-		rentNow { $("a.kioskLink").getAt(1) }
+		rentNow { module FirstKioskModule }
 	}
 }

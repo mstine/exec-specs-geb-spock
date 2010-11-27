@@ -26,7 +26,7 @@ class FindSpeakerFlowSpec extends GebSpec {
 		
 		and: "Customer clicks on 'RENT NOW'"
 		at FindKioskBySpeakerPage
-		rentNow.click(ReserveSpeakerPage)
+		rentNow.link.click(ReserveSpeakerPage)
 		
 		and: "Customer clicks on 'Continue'"
 		at ReserveSpeakerPage

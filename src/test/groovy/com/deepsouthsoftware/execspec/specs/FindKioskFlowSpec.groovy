@@ -22,7 +22,7 @@ class FindKioskFlowSpec extends GebSpec {
 		searchButton.click()
 		
 		and: "Customer selects the first kiosk"
-		findSpeakersHere.click(FindSpeakerByKioskPage)
+		findSpeakersHere.link.click(FindSpeakerByKioskPage)
 		
 		and: "Customer clicks on 'Alex Miller'"
 		at FindSpeakerByKioskPage

@@ -1,6 +1,7 @@
 package com.deepsouthsoftware.execspec.pages
 
 import geb.Page
+import com.deepsouthsoftware.execspec.modules.FirstKioskModule
 
 class FindAFluffboxPage extends Page {
 	static url = "kiosk/find"
@@ -10,6 +11,6 @@ class FindAFluffboxPage extends Page {
 	static content = {
 		searchKiosksForm { $('form', name: 'searchKiosksForm') } 
 		searchButton { $('input', name: 'searchButton') }
-		findSpeakersHere { $('a.kioskLink').getAt(1) }
+		findSpeakersHere { module FirstKioskModule }
 	}
 }
