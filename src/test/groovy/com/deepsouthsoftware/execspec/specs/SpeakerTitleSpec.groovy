@@ -18,10 +18,10 @@ class SpeakerTitleSpec extends GebSpec {
 		
 		and: "Customer clicks on a speaker's name"
 		at FindASpeakerPage
-		$('a', text: speaker).click()
+		speakerLink(speaker).click(SpeakerDetailPage)
 		
 		then: "Customer should see speaker's title"
-		$("h2").text() == title
+		speakerTitle == title
 		
 		where:
 		speaker					| title

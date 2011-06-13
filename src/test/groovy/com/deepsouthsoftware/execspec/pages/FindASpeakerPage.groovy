@@ -10,5 +10,6 @@ class FindASpeakerPage extends Page {
 	
 	static content = {
 		alexMiller { module AlexMillerModule }
+		speakerLink { name -> $('a', text: name) }
 	}
 }
