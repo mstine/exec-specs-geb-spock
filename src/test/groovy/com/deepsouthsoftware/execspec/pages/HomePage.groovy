@@ -8,7 +8,7 @@ class HomePage extends Page {
 	static at = { title == "Fluffbox" }
 	
 	static content = {
-		findASpeaker { $("div.headerBox > a.headerLink").getAt(0) }
-		findAFluffbox { $("div.headerBox > a.headerLink").getAt(1) }
+		findASpeaker { $("div.headerBox > a.headerLink", 0) }
+		findAFluffbox { $("div.headerBox > a.headerLink", 1) }
 	}
 }

@@ -5,7 +5,7 @@ import geb.Module
 class AlexMillerModule extends Module {
 	
 	static content = {
-		link { $("div.speakerRow > div.speaker > a").getAt(2) }
+		link { $("div.speakerRow > div.speaker > a", 2) }
 	}
 	
 }
