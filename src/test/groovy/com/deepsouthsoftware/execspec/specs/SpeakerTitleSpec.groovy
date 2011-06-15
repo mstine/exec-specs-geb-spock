@@ -14,11 +14,11 @@ class SpeakerTitleSpec extends GebSpec {
 		to HomePage
 		
 		when: "Customer clicks on 'FIND A SPEAKER'"
-		findASpeaker.click(FindASpeakerPage)
+		findASpeaker.click()
 		
 		and: "Customer clicks on a speaker's name"
 		at FindASpeakerPage
-		speakerLink(speaker).click(SpeakerDetailPage)
+		speakerLink(speaker).click()
 		
 		then: "Customer should see speaker's title"
 		speakerTitle == title

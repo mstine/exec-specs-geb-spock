@@ -9,7 +9,7 @@ class FindASpeakerPage extends Page {
 	static at = { title == "Find a Speaker" }
 	
 	static content = {
-		alexMiller { module AlexMillerModule }
-		speakerLink { name -> $('a', text: name) }
+		alexMiller(to: AlexMillerDetailPage) { module AlexMillerModule }
+		speakerLink(to: SpeakerDetailPage) { name -> $('a', text: name) }
 	}
 }

@@ -9,6 +9,6 @@ class AlexMillerDetailPage extends Page {
 	static at = { $("h1").text() == "Alex Miller" }
 	
 	static content = {
-		findThisSpeaker { module SpeakerDetailLinkModule }
+		findThisSpeaker(to: FindKioskBySpeakerPage) { module SpeakerDetailLinkModule }
 	}
 }

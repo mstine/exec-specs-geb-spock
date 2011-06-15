@@ -11,6 +11,6 @@ class FindKioskBySpeakerPage extends Page {
 	}
 	
 	static content = {
-		rentNow { module FirstKioskModule }
+		rentNow(to: ReserveSpeakerPage) { module FirstKioskModule }
 	}
 }

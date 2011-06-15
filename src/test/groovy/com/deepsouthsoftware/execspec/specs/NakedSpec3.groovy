@@ -14,11 +14,11 @@ class NakedSpec3 extends GebSpec {
 		to HomePage
 		
 		when: "Customer clicks on 'FIND A SPEAKER'"
-		findASpeaker.click(FindASpeakerPage)
+		findASpeaker.click()
 
 		and: "Customer clicks on 'Alex Miller'"
 		at FindASpeakerPage
-		alexMiller.link.click(AlexMillerDetailPage)
+		alexMiller.link.click()
 
 		and: "Customer clicks on 'Find this Speaker'"
 		at AlexMillerDetailPage

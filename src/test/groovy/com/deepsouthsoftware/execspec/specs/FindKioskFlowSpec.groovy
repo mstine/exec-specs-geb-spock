@@ -14,7 +14,7 @@ class FindKioskFlowSpec extends GebSpec {
 		to HomePage
 		
 		when: "Customer clicks on 'FIND A FLUFFBOX'"
-		findAFluffbox.click(FindAFluffboxPage)
+		findAFluffbox.click()
 		
 		and: "Customer searches for kiosks in Ft. Lauderdale"
 		at FindAFluffboxPage
@@ -22,25 +22,25 @@ class FindKioskFlowSpec extends GebSpec {
 		searchButton.click()
 		
 		and: "Customer selects the first kiosk"
-		findSpeakersHere.link.click(FindSpeakerByKioskPage)
+		findSpeakersHere.link.click()
 		
 		and: "Customer clicks on 'Alex Miller'"
 		at FindSpeakerByKioskPage
-		alexMiller.link.click(AlexMillerClonePage)
+		alexMiller.link.click()
 		
 		and: "Customer clicks 'RENT NOW!'"
 		at AlexMillerClonePage
-		rentNow.link.click(ReserveSpeakerPage)
+		rentNow.link.click()
 		
 		and: "Customer clicks on 'Continue'"
 		at ReserveSpeakerPage
-		continueToSignInOrCreateAccount.click(LoginPage)
+		continueToSignInOrCreateAccount.click()
 		
 		and: "Customer enters username, password, and clicks 'Log in'"
 		at LoginPage
 		loginForm.j_username = "joeuser"
 		loginForm.j_password = "password"
-		loginButton.click(PaymentPage)
+		loginButton.click()
 		
 		then: "If we'd implemented payment, we'd be ready to pay."
 		at PaymentPage

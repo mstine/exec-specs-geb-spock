@@ -9,6 +9,6 @@ class AlexMillerClonePage extends Page {
 	static at = { $("h1").text() == "Alex Miller" }
 	
 	static content = {
-		rentNow { module SpeakerDetailLinkModule }
+		rentNow(to: ReserveSpeakerPage) { module SpeakerDetailLinkModule }
 	}
 }

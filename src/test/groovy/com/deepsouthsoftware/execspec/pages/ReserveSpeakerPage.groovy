@@ -8,6 +8,6 @@ class ReserveSpeakerPage extends Page {
 	static at = { $("div.reserveLocation > h2").text() == "Pickup location:" }
 	
 	static content = {
-		continueToSignInOrCreateAccount { $("h1.bigLink > a") }
+		continueToSignInOrCreateAccount(to: LoginPage) { $("h1.bigLink > a") }
 	}
 }

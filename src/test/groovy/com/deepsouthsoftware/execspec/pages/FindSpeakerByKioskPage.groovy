@@ -11,6 +11,6 @@ class FindSpeakerByKioskPage extends Page {
 	}
 	
 	static content = {
-		alexMiller { module AlexMillerModule }
+		alexMiller(to: AlexMillerClonePage) { module AlexMillerModule }
 	}
 }

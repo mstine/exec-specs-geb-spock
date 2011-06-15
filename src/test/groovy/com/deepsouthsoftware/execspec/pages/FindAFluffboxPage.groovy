@@ -11,6 +11,6 @@ class FindAFluffboxPage extends Page {
 	static content = {
 		searchKiosksForm { $('form', name: 'searchKiosksForm') } 
 		searchButton { $('input', name: 'searchButton') }
-		findSpeakersHere { module FirstKioskModule }
+		findSpeakersHere(to: FindSpeakerByKioskPage) { module FirstKioskModule }
 	}
 }

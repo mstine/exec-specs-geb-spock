@@ -9,6 +9,6 @@ class LoginPage extends Page {
 	
 	static content = {
 		loginForm { $("form", name: "loginForm") }
-		loginButton { $("a#loginButton") }
+		loginButton(to: PaymentPage) { $("a#loginButton") }
 	}
 }
