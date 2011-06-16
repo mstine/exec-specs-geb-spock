@@ -7,9 +7,11 @@ repositories {
 
 dependencies {
 	groovy 'org.codehaus.groovy:groovy-all:1.7.5'
-	testCompile 'org.codehaus.geb:geb-core:0.5.1'
-	testCompile 'org.seleniumhq.selenium:selenium-firefox-driver:2.0a7'
-  testCompile 'org.spockframework:spock-core:0.5-groovy-1.7'
-	testCompile 'org.codehaus.geb:geb-spock:0.5.1'
-  testCompile 'junit:junit:4.8.2'
+	
+	testCompile 'org.codehaus.geb:geb-core:0.5.1',
+				'org.seleniumhq.selenium:selenium-firefox-driver:2.0a7',
+  				'org.spockframework:spock-core:0.5-groovy-1.7',
+				'org.codehaus.geb:geb-spock:0.5.1',
+  				'junit:junit:4.8.2',
+				'org.apache.poi:poi:3.7'
 }
