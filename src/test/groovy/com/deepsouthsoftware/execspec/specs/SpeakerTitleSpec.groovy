@@ -30,4 +30,5 @@ class SpeakerTitleSpec extends GebSpec {
 		"Brian Sletten"			| "Forward Leaning Software Engineer"
 		"Ken Sipe"				| "Gradleware CTO"
 	}
+	
 }

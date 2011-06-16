@@ -13,7 +13,7 @@ class DatabaseDrivenSpec extends GebSpec {
 		sql.execute("insert into speakers values (1, 'Craig Walls', 'Author of Spring in Action')")
 		sql.execute("insert into speakers values (2, 'Venkat Subramaniam', 'Founder of Agile Developer, Inc.')")
 		sql.execute("insert into speakers values (3, 'Brian Sletten', 'Forward Leaning Software Engineer')")
-		sql.execute("insert into speakers values (4, 'Nathaniel Schutta', 'Author, speaker, software engineer focused on user interface design.')")
+		sql.execute("insert into speakers values (4, 'Ken Sipe', 'Gradleware CTO')")
 	}
 		
 	String getBaseUrl() {
