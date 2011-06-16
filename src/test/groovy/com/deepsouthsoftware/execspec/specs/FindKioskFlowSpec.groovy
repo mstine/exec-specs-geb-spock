@@ -18,8 +18,7 @@ class FindKioskFlowSpec extends GebSpec {
 		
 		and: "Customer searches for kiosks in Ft. Lauderdale"
 		at FindAFluffboxPage
-		searchKiosksForm.searchCriteria = 'Ft. Lauderdale'
-		searchButton.click()
+		searchForKiosks('Ft. Lauderdale')
 		
 		and: "Customer selects the first kiosk"
 		findSpeakersHere.link.click()

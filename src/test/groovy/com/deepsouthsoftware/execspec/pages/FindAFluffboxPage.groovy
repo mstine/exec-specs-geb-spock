@@ -8,6 +8,12 @@ class FindAFluffboxPage extends Page {
 	
 	static at = { title == "Find a Fluffbox" }
 	
+	def searchForKiosks(def where) {
+		searchKiosksForm.searchCriteria = where
+		searchButton.click()
+		waitFor(5, 0.5) { findSpeakersHere.link.present }
+	}
+	
 	static content = {
 		searchKiosksForm { $('form', name: 'searchKiosksForm') } 
 		searchButton { $('input', name: 'searchButton') }
