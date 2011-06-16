@@ -16,12 +16,12 @@ class FindSpeakerFlowSpec extends GebSpec {
 		when: "Customer clicks on 'FIND A SPEAKER'"
 		findASpeaker.click()
 		
-		and: "Customer clicks on 'Alex Miller'"
+		and: "Customer clicks on 'Matt Stine'"
 		at FindASpeakerPage
-		alexMiller.link.click()
+		mattStine.link.click()
 		
 		and: "Customer clicks on 'Find this Speaker'"
-		at AlexMillerDetailPage
+		at MattStineDetailPage
 		findThisSpeaker.link.click()
 		
 		and: "Customer clicks on 'RENT NOW'"

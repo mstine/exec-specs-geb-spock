@@ -24,12 +24,12 @@ class FindKioskFlowSpec extends GebSpec {
 		and: "Customer selects the first kiosk"
 		findSpeakersHere.link.click()
 		
-		and: "Customer clicks on 'Alex Miller'"
+		and: "Customer clicks on 'Matt Stine'"
 		at FindSpeakerByKioskPage
-		alexMiller.link.click()
+		mattStine.link.click()
 		
 		and: "Customer clicks 'RENT NOW!'"
-		at AlexMillerClonePage
+		at MattStineClonePage
 		rentNow.link.click()
 		
 		and: "Customer clicks on 'Continue'"

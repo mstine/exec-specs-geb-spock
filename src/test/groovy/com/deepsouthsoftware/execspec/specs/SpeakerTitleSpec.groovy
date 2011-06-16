@@ -24,10 +24,10 @@ class SpeakerTitleSpec extends GebSpec {
 		speakerTitle == title
 		
 		where:
-		speaker					| title
-		"Alex Miller"		| "Sr. Engineer with Terracotta Inc."
-		"Aaron Bedra"		| "Principal at Relevance, Member Clojure/core"
-		"Andrew Glover"	| "Founder of easyb"
-		"Brian Goetz"		| "Author of Java Concurrency in Practice"
+		speaker						| title
+		"Craig Walls"				| "Author of Spring in Action"
+		"Venkat Subramaniam"		| "Founder of Agile Developer, Inc."
+		"Brian Sletten"				| "Forward Leaning Software Engineer"
+		"Nathaniel Schutta"			| "Author, speaker, software engineer focused on user interface design."
 	}
 }

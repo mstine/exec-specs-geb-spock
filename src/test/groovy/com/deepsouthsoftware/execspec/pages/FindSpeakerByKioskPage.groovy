@@ -1,7 +1,7 @@
 package com.deepsouthsoftware.execspec.pages
 
 import geb.Page
-import com.deepsouthsoftware.execspec.modules.AlexMillerModule
+import com.deepsouthsoftware.execspec.modules.MattStineModule
 
 class FindSpeakerByKioskPage extends Page {
 	static url = "speakerClone/findByKiosk/1"
@@ -11,6 +11,6 @@ class FindSpeakerByKioskPage extends Page {
 	}
 	
 	static content = {
-		alexMiller(to: AlexMillerClonePage) { module AlexMillerModule }
+		mattStine(to: MattStineClonePage) { module MattStineModule }
 	}
 }

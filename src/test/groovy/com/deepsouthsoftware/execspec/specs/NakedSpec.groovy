@@ -9,7 +9,7 @@ class NakedSpec extends Specification {
 				
 		when: "Customer clicks on 'FIND A SPEAKER'"
 		
-		and: "Customer clicks on 'Alex Miller'"
+		and: "Customer clicks on 'Matt Stine'"
 		
 		and: "Customer clicks on 'Find this Speaker'"
 		

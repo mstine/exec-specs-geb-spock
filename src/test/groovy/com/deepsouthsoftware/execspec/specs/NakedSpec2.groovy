@@ -16,7 +16,7 @@ class NakedSpec2 extends GebSpec {
 		when: "Customer clicks on 'FIND A SPEAKER'"
 		findASpeaker.click()
 		
-		and: "Customer clicks on 'Alex Miller'"
+		and: "Customer clicks on 'Matt Stine'"
 		at FindASpeakerPage
 		
 		and: "Customer clicks on 'Find this Speaker'"
