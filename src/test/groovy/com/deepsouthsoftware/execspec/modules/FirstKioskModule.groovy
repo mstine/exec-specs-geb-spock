@@ -5,7 +5,7 @@ import geb.Module
 class FirstKioskModule extends Module {
 	
 	static content = {
-		link { $('a.kioskLink').getAt(1) }
+		link { $('a.kioskLink', 1) }
 	}
 	
 }
